@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo Basic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: blue;
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+
+        header > a {
+            background-color: white;
+            color: blue;
+            text-decoration: none;
+            padding: .5em;
+            font-weight: 600;
+        }
+
+        header h1 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            width: 50%;
+            margin: auto;
+        }
+
+        article.todo {
+            margin-bottom: 1em;
+        }
+
+        p.meta {
+            color: rgba(0,0,0,0.5);
+            font-size: .8em;
+        }
+
+        p.content {
+            margin: .5em 0;
+        }
+
+        .action_bar, .action_bar .update {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        form input[type="submit"], .update a {
+            border: none;
+            background-color: blue;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            padding: .5em;
+            cursor: pointer;
+        }
+
+        .finish input[type="submit"] {
+            background-color: green;
+        }
+
+        .update input[type="submit"] {
+            background-color: red;
+            margin-left: 1em;
+        }
+
+        .complete {
+            background-color: green;
+            text-align: center;
+            color: #fff;
+            padding: .5em;
+            font-weight: 600;
+        }
+
+        .todo_form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .todo_form input[type="text"] {
+            margin-bottom: 1em;
+            padding: .5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.php">Todo Basic</a></h1>
+        <a href="todo.php">Create Todo</a>
+    </header>
+    <section>
